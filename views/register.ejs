@@ -1,0 +1,25 @@
+<% include partials/header %>
+<div class="container">
+    <h2 class="register-h1">Sign Up!</h2> 
+    <p class="register-p">Sign up for the ability to post your own great campgrounds or talk with others about theirs!</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="username" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="password" required>
+                </div>
+                <div class="form-group">
+                    <button class="form-control btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>
